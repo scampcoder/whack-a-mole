@@ -28,3 +28,11 @@ function peep() {
     if(!timeUp) peep()
   }, time);
 }
+
+function startGame() {
+  scoreBoard.textContent = 0;
+  timeUp = false;
+  score = 0;
+  peep();
+  setTimeout(() => timeUp = true, 10000) //10 seconds
+}
