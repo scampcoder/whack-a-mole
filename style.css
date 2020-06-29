@@ -14,3 +14,11 @@ h1 {
   line-height: 1;
   margin-bottom: 0;
 }
+
+.score {
+  background: blue;
+  padding: 0 48px;
+  line-height: 1;
+  border-radius: 16px;
+  color: #fff;
+}
