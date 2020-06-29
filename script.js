@@ -6,3 +6,15 @@ let lastHole;
 function randomTime(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
+
+function randomHole(holes) {
+  const index = Math.floor(Math.random() * holes.length);
+  const hole = holes[index];
+
+  if(hole === lastHole) {
+    console.log("That's the same number");
+    return randomHole(holes);
+  }
+  lastHole = hole;
+  return hole;
+}
