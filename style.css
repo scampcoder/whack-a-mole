@@ -39,7 +39,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url(dirt.jpg) bottom center no-repeat;
+  background: url('dirt.jpg') bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -47,4 +47,14 @@ h1 {
   position: absolute;
   z-index: 2;
   bottom: -30px;
+}
+
+.mole {
+  background: url('mole.jpg') bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
 }
