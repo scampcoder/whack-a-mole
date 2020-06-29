@@ -25,7 +25,7 @@ function peep() {
   hole.classList.add('up');
   setTimeout(() => {
     hole.classList.remove('up');
-    if(!timeUp) peep()
+    if(!timeUp) peep();
   }, time);
 }
 
@@ -34,16 +34,14 @@ function startGame() {
   timeUp = false;
   score = 0;
   peep();
-  setTimeout(() => timeUp = true, 10000) //10 seconds
+  setTimeout(() => timeUp = true, 10000); //10 seconds
 }
 
 function wack(e) {
-  if(!e.isTrusted){
-    return; //cheater
-    score++;
-    this.parentNode.classList.remove('up');
-    scoreBoard.textContent = score;
-  }
+  if(!e.isTrusted) return; //cheater
+  score++;
+  this.parentNode.classList.remove('up');
+  scoreBoard.textContent = score;
 }
 
-moles.foreEach(mole => mole.addEventListener('click, wack'));
+moles.forEach(mole => mole.addEventListener('click, wack'));

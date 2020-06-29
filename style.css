@@ -16,7 +16,7 @@ h1 {
 }
 
 .score {
-  background: blue;
+  background-color: blue;
   padding: 0 48px;
   line-height: 1;
   border-radius: 16px;
@@ -59,7 +59,7 @@ h1 {
   transition: all 0.4s;
 }
 
-.hole .up .mole {
+.hole.up .mole {
   top:0;
 }
 
