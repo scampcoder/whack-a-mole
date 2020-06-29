@@ -36,3 +36,14 @@ function startGame() {
   peep();
   setTimeout(() => timeUp = true, 10000) //10 seconds
 }
+
+function wack(e) {
+  if(!e.isTrusted){
+    return; //cheater
+    score++;
+    this.parentNode.classList.remove('up');
+    scoreBoard.textContent = score;
+  }
+}
+
+moles.foreEach(mole => mole.addEventListener('click, wack'));
