@@ -44,4 +44,4 @@ function wack(e) {
   scoreBoard.textContent = score;
 }
 
-moles.forEach(mole => mole.addEventListener('click, wack'));
+moles.forEach(mole => mole.addEventListener('click', wack));
