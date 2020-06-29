@@ -22,3 +22,11 @@ h1 {
   border-radius: 16px;
   color: #fff;
 }
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
