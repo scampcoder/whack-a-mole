@@ -39,7 +39,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url('dirt.jpg') bottom center no-repeat;
+  background: url('Dirt.jpg') bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
